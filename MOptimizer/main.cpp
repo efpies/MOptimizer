@@ -7,12 +7,13 @@
 //
 
 #include <iostream>
+#include "Point.h"
+#include "PointHelper.h"
 
 int main(int argc, const char * argv[])
 {
-
-    // insert code here...
-    std::cout << "Hello, World!\n";
+    Point p = PointHelper::inputPoint();
+    p.print();
     return 0;
 }
 
