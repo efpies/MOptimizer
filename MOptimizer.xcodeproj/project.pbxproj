@@ -9,10 +9,10 @@
 /* Begin PBXBuildFile section */
 		F8DE6BDD16E2D6F400888B85 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F8DE6BDC16E2D6F400888B85 /* main.cpp */; };
 		F8DE6BDF16E2D6F400888B85 /* MOptimizer.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = F8DE6BDE16E2D6F400888B85 /* MOptimizer.1 */; };
-		F8DE6BE816E2DA1100888B85 /* IOptimizer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F8DE6BE616E2DA1100888B85 /* IOptimizer.cpp */; };
-		F8DE6BEB16E2DA2400888B85 /* IFunction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F8DE6BE916E2DA2400888B85 /* IFunction.cpp */; };
-		F8DE6BEE16E2DA3A00888B85 /* Point.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F8DE6BEC16E2DA3A00888B85 /* Point.cpp */; };
-		F8DE6BF116E2E14E00888B85 /* PointHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F8DE6BEF16E2E14E00888B85 /* PointHelper.cpp */; };
+		F8DE6BFB16E2E90F00888B85 /* IFunction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F8DE6BF316E2E90F00888B85 /* IFunction.cpp */; };
+		F8DE6BFC16E2E90F00888B85 /* IOptimizer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F8DE6BF516E2E90F00888B85 /* IOptimizer.cpp */; };
+		F8DE6BFD16E2E90F00888B85 /* Point.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F8DE6BF716E2E90F00888B85 /* Point.cpp */; };
+		F8DE6BFE16E2E90F00888B85 /* PointHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F8DE6BF916E2E90F00888B85 /* PointHelper.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,14 +32,14 @@
 		F8DE6BD916E2D6F400888B85 /* MOptimizer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MOptimizer; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8DE6BDC16E2D6F400888B85 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		F8DE6BDE16E2D6F400888B85 /* MOptimizer.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = MOptimizer.1; sourceTree = "<group>"; };
-		F8DE6BE616E2DA1100888B85 /* IOptimizer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IOptimizer.cpp; path = Classes/IOptimizer.cpp; sourceTree = "<group>"; };
-		F8DE6BE716E2DA1100888B85 /* IOptimizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IOptimizer.h; path = Classes/IOptimizer.h; sourceTree = "<group>"; };
-		F8DE6BE916E2DA2400888B85 /* IFunction.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IFunction.cpp; path = Classes/IFunction.cpp; sourceTree = "<group>"; };
-		F8DE6BEA16E2DA2400888B85 /* IFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IFunction.h; path = Classes/IFunction.h; sourceTree = "<group>"; };
-		F8DE6BEC16E2DA3A00888B85 /* Point.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Point.cpp; path = Classes/Point.cpp; sourceTree = "<group>"; };
-		F8DE6BED16E2DA3A00888B85 /* Point.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Point.h; path = Classes/Point.h; sourceTree = "<group>"; };
-		F8DE6BEF16E2E14E00888B85 /* PointHelper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PointHelper.cpp; path = Classes/PointHelper.cpp; sourceTree = "<group>"; };
-		F8DE6BF016E2E14E00888B85 /* PointHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PointHelper.h; path = Classes/PointHelper.h; sourceTree = "<group>"; };
+		F8DE6BF316E2E90F00888B85 /* IFunction.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IFunction.cpp; sourceTree = "<group>"; };
+		F8DE6BF416E2E90F00888B85 /* IFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFunction.h; sourceTree = "<group>"; };
+		F8DE6BF516E2E90F00888B85 /* IOptimizer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IOptimizer.cpp; sourceTree = "<group>"; };
+		F8DE6BF616E2E90F00888B85 /* IOptimizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOptimizer.h; sourceTree = "<group>"; };
+		F8DE6BF716E2E90F00888B85 /* Point.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Point.cpp; sourceTree = "<group>"; };
+		F8DE6BF816E2E90F00888B85 /* Point.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Point.h; sourceTree = "<group>"; };
+		F8DE6BF916E2E90F00888B85 /* PointHelper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PointHelper.cpp; sourceTree = "<group>"; };
+		F8DE6BFA16E2E90F00888B85 /* PointHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PointHelper.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,26 +72,26 @@
 		F8DE6BDB16E2D6F400888B85 /* MOptimizer */ = {
 			isa = PBXGroup;
 			children = (
-				F8DE6BE516E2D9E400888B85 /* Classes */,
+				F8DE6BF216E2E90F00888B85 /* Classes */,
 				F8DE6BDC16E2D6F400888B85 /* main.cpp */,
 				F8DE6BDE16E2D6F400888B85 /* MOptimizer.1 */,
 			);
 			path = MOptimizer;
 			sourceTree = "<group>";
 		};
-		F8DE6BE516E2D9E400888B85 /* Classes */ = {
+		F8DE6BF216E2E90F00888B85 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				F8DE6BE916E2DA2400888B85 /* IFunction.cpp */,
-				F8DE6BEA16E2DA2400888B85 /* IFunction.h */,
-				F8DE6BE616E2DA1100888B85 /* IOptimizer.cpp */,
-				F8DE6BE716E2DA1100888B85 /* IOptimizer.h */,
-				F8DE6BEC16E2DA3A00888B85 /* Point.cpp */,
-				F8DE6BED16E2DA3A00888B85 /* Point.h */,
-				F8DE6BEF16E2E14E00888B85 /* PointHelper.cpp */,
-				F8DE6BF016E2E14E00888B85 /* PointHelper.h */,
+				F8DE6BF316E2E90F00888B85 /* IFunction.cpp */,
+				F8DE6BF416E2E90F00888B85 /* IFunction.h */,
+				F8DE6BF516E2E90F00888B85 /* IOptimizer.cpp */,
+				F8DE6BF616E2E90F00888B85 /* IOptimizer.h */,
+				F8DE6BF716E2E90F00888B85 /* Point.cpp */,
+				F8DE6BF816E2E90F00888B85 /* Point.h */,
+				F8DE6BF916E2E90F00888B85 /* PointHelper.cpp */,
+				F8DE6BFA16E2E90F00888B85 /* PointHelper.h */,
 			);
-			name = Classes;
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,10 +146,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8DE6BDD16E2D6F400888B85 /* main.cpp in Sources */,
-				F8DE6BE816E2DA1100888B85 /* IOptimizer.cpp in Sources */,
-				F8DE6BEB16E2DA2400888B85 /* IFunction.cpp in Sources */,
-				F8DE6BEE16E2DA3A00888B85 /* Point.cpp in Sources */,
-				F8DE6BF116E2E14E00888B85 /* PointHelper.cpp in Sources */,
+				F8DE6BFB16E2E90F00888B85 /* IFunction.cpp in Sources */,
+				F8DE6BFC16E2E90F00888B85 /* IOptimizer.cpp in Sources */,
+				F8DE6BFD16E2E90F00888B85 /* Point.cpp in Sources */,
+				F8DE6BFE16E2E90F00888B85 /* PointHelper.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
