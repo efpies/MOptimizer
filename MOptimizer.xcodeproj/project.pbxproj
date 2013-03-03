@@ -13,6 +13,7 @@
 		F8DE6BFC16E2E90F00888B85 /* IOptimizer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F8DE6BF516E2E90F00888B85 /* IOptimizer.cpp */; };
 		F8DE6BFD16E2E90F00888B85 /* Point.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F8DE6BF716E2E90F00888B85 /* Point.cpp */; };
 		F8DE6BFE16E2E90F00888B85 /* PointHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F8DE6BF916E2E90F00888B85 /* PointHelper.cpp */; };
+		F8DE6C0316E2EA5D00888B85 /* Func1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F8DE6C0116E2EA5D00888B85 /* Func1.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -40,6 +41,8 @@
 		F8DE6BF816E2E90F00888B85 /* Point.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Point.h; sourceTree = "<group>"; };
 		F8DE6BF916E2E90F00888B85 /* PointHelper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PointHelper.cpp; sourceTree = "<group>"; };
 		F8DE6BFA16E2E90F00888B85 /* PointHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PointHelper.h; sourceTree = "<group>"; };
+		F8DE6C0116E2EA5D00888B85 /* Func1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Func1.cpp; sourceTree = "<group>"; };
+		F8DE6C0216E2EA5D00888B85 /* Func1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Func1.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +85,7 @@
 		F8DE6BF216E2E90F00888B85 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				F8DE6C0016E2E95D00888B85 /* Functions */,
 				F8DE6BF316E2E90F00888B85 /* IFunction.cpp */,
 				F8DE6BF416E2E90F00888B85 /* IFunction.h */,
 				F8DE6BF516E2E90F00888B85 /* IOptimizer.cpp */,
@@ -92,6 +96,15 @@
 				F8DE6BFA16E2E90F00888B85 /* PointHelper.h */,
 			);
 			path = Classes;
+			sourceTree = "<group>";
+		};
+		F8DE6C0016E2E95D00888B85 /* Functions */ = {
+			isa = PBXGroup;
+			children = (
+				F8DE6C0116E2EA5D00888B85 /* Func1.cpp */,
+				F8DE6C0216E2EA5D00888B85 /* Func1.h */,
+			);
+			path = Functions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,6 +163,7 @@
 				F8DE6BFC16E2E90F00888B85 /* IOptimizer.cpp in Sources */,
 				F8DE6BFD16E2E90F00888B85 /* Point.cpp in Sources */,
 				F8DE6BFE16E2E90F00888B85 /* PointHelper.cpp in Sources */,
+				F8DE6C0316E2EA5D00888B85 /* Func1.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

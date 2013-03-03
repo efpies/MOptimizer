@@ -17,12 +17,14 @@ private:
     vector<double> coords;
     
 public:
+    Point(const Point &srcPoint);
     Point(const vector<double> &coords);
     
           double& operator[](unsigned int i);
 	const double& operator[](unsigned int i) const;
     
     void print() const;
+    short dimensions() const;
 };
 
 #endif /* defined(__MOptimizer__Point__) */

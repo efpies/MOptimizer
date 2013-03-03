@@ -13,8 +13,13 @@ class Point;
 
 class IFunction {
 public:
-    virtual double value(Point point) const;
-    virtual short dimensions() const;
+    class DimensionException {
+    public:
+        DimensionException() { }
+    };
+    
+    virtual double value(const Point &point) const = 0;
+    virtual short dimensions() const = 0;
 };
 
 #endif /* defined(__MOptimizer__IFunction__) */

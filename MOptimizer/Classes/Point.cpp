@@ -12,7 +12,11 @@
 
 typedef vector<double>::const_iterator pointItr;
 
-
+Point::Point(const Point &srcPoint)
+    : coords(srcPoint.coords)
+{
+    
+}
 
 Point::Point(const vector<double> &_coords)
     : coords(_coords)
@@ -41,4 +45,9 @@ double& Point::operator[](unsigned int i)
 const double& Point::operator[](unsigned int i) const
 {
     return coords[i];
+}
+
+short Point::dimensions() const
+{
+    return coords.size();
 }
