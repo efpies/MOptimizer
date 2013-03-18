@@ -15,7 +15,7 @@ class Func1 : public IFunction {
 public:
     double value(const Point &point) const;
     short dimensions() const;
-    string stringPresentation() const;
+    string stringRepresentation() const;
 };
 
 #endif /* defined(__MOptimizer__Func1__) */

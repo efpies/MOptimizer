@@ -27,7 +27,7 @@ short Func2::dimensions() const
     return 2;
 }
 
-string Func2::stringPresentation() const
+string Func2::stringRepresentation() const
 {
     return string("F = x1^2 + 3*x2^2 + 2*x1*x2");
 }

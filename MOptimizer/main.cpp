@@ -45,7 +45,7 @@ double inputPrecision()
 int main(int argc, const char * argv[])
 {
     Func2 f = Func2();
-    cout << f.stringPresentation() << endl << endl;
+    cout << f.stringRepresentation() << endl << endl;
     
     Point p = inputPoint(f);
     Point d = inputDirection(f);

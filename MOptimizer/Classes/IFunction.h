@@ -23,7 +23,7 @@ public:
     
     virtual double value(const Point &point) const = 0;
     virtual short dimensions() const = 0;
-    virtual string stringPresentation() const = 0;
+    virtual string stringRepresentation() const = 0;
 };
 
 #endif /* defined(__MOptimizer__IFunction__) */
