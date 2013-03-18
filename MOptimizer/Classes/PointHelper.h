@@ -13,7 +13,7 @@
 
 class PointHelper {
 public:
-    static Point inputPoint();
+    static Point inputPoint(const short dimensionsCount = 0);
 };
 
 #endif /* defined(__MOptimizer__PointHelper__) */

@@ -11,6 +11,9 @@
 
 class Point;
 
+#include <string>
+using namespace std;
+
 class IFunction {
 public:
     class DimensionException {
@@ -20,6 +23,7 @@ public:
     
     virtual double value(const Point &point) const = 0;
     virtual short dimensions() const = 0;
+    virtual string stringPresentation() const = 0;
 };
 
 #endif /* defined(__MOptimizer__IFunction__) */

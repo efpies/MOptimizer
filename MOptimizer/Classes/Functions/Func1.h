@@ -11,10 +11,11 @@
 
 #include "IFunction.h"
 
-class Func1 : virtual IFunction {
+class Func1 : public IFunction {
 public:
     double value(const Point &point) const;
     short dimensions() const;
+    string stringPresentation() const;
 };
 
 #endif /* defined(__MOptimizer__Func1__) */

@@ -11,12 +11,18 @@
 #include "PointHelper.h"
 #include "Func1.h"
 
+Point inputPoint(const IFunction &f)
+{
+    cout << "-- Input start point --" << endl;
+    return PointHelper::inputPoint(f.dimensions());
+}
+
 int main(int argc, const char * argv[])
 {
-    Point p = PointHelper::inputPoint();
-    p.print();
-    Func1 f = Func1();
-    cout << f.value(p);
+    Func2 f = Func2();
+    cout << f.stringPresentation() << endl << endl;
+    
+    Point p = inputPoint(f);
     return 0;
 }
 

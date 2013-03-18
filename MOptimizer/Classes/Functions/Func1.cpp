@@ -10,7 +10,7 @@
 
 #include "Point.h"
 
-#define F(x) (x)*(x) + 3*(x) - 4
+#define F(x) (x)*(x) + 2*(x)
 
 double Func1::value(const Point &point) const
 {
@@ -24,4 +24,9 @@ double Func1::value(const Point &point) const
 short Func1::dimensions() const
 {
     return 1;
+}
+
+string Func1::stringPresentation() const
+{
+    return string("F = x^2 + 2*x");
 }
