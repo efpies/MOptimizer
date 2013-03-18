@@ -100,8 +100,8 @@ double norm(const Point &first, const Point &second)
     return sqrt(norm);
 }
 
-#pragma mark - Arithmetic operations
-#pragma mark - Point and double
+#pragma mark - Арифметические операции
+#pragma mark - Point и double
 
 Point operator/(const Point &originalPoint, const double divider)
 {
@@ -178,7 +178,7 @@ Point operator-(const Point &originalPoint)
     return Point(originalCoords);
 }
 
-#pragma mark - Point and point
+#pragma mark - Point и point
 
 Point operator/(const Point &originalPoint, const Point &dividerPoint)
 {

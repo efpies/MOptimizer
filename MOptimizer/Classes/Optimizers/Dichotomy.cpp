@@ -13,6 +13,7 @@
 
 Point Dichotomy::optimize(const IFunction &f, const Point &start, const Point &direction, const double eps) const
 {
+    // Локализация минимума методом Свенна
     double borders[2];
     swann(f, start, direction, borders);
     
@@ -25,12 +26,14 @@ Point Dichotomy::optimize(const IFunction &f, const Point &start, const Point &d
     do {
         L  = norm(start.withAlpha(direction, borders[0]), start.withAlpha(direction, borders[1])); 	// Вычисление интервала
         
+        // Смена временных точек
         lambda = (borders[LEFT_BORDER] + borders[RIGHT_BORDER] - delta) / 2.0;
         mju    = (borders[LEFT_BORDER] + borders[RIGHT_BORDER] + delta) / 2.0;
         
-        // Условие на окончание поиска
+        // Выполняется ли условие на окончание поиска?
         condition = (L <= eps);
         if(!condition) {
+            // Нет — двигаем границы
             if(f.value(start.withAlpha(direction, mju)) > f.value(start.withAlpha(direction, lambda))) {
                 borders[RIGHT_BORDER] = mju;
             }
@@ -41,5 +44,6 @@ Point Dichotomy::optimize(const IFunction &f, const Point &start, const Point &d
     }
     while(!condition);
     
+    // Возвращаем аппроксимирующий минимум
     return start.withAlpha(direction, (borders[LEFT_BORDER] + borders[RIGHT_BORDER]) / 2.0);
 }

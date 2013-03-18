@@ -35,8 +35,8 @@ public:
     double& operator[](unsigned int i);
 	const double& operator[](unsigned int i) const;
     
-#pragma mark - Artithmetic operations
-#pragma mark - Point and double
+#pragma mark - Арифметические операции
+#pragma mark - Point и double
     
     friend Point operator/(const Point &originalPoint, const double divider);
     friend Point operator*(const Point &originalPoint, const double multiplier);
@@ -50,7 +50,7 @@ public:
     
     friend Point operator-(const Point &originalPoint);
     
-#pragma mark - Point and point
+#pragma mark - Point и point
     
     friend Point operator/(const Point &originalPoint, const Point &dividerPoint);
     friend Point operator*(const Point &originalPoint, const Point &multiplierPoint);
