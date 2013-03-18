@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F8B1D38616F68EAB00B05991 /* Func2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F8B1D38416F68EAB00B05991 /* Func2.cpp */; };
 		F8DE6BDD16E2D6F400888B85 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F8DE6BDC16E2D6F400888B85 /* main.cpp */; };
 		F8DE6BDF16E2D6F400888B85 /* MOptimizer.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = F8DE6BDE16E2D6F400888B85 /* MOptimizer.1 */; };
 		F8DE6BFB16E2E90F00888B85 /* IFunction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F8DE6BF316E2E90F00888B85 /* IFunction.cpp */; };
@@ -30,6 +31,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F8B1D38416F68EAB00B05991 /* Func2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Func2.cpp; sourceTree = "<group>"; };
+		F8B1D38516F68EAB00B05991 /* Func2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Func2.h; sourceTree = "<group>"; };
 		F8DE6BD916E2D6F400888B85 /* MOptimizer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MOptimizer; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8DE6BDC16E2D6F400888B85 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		F8DE6BDE16E2D6F400888B85 /* MOptimizer.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = MOptimizer.1; sourceTree = "<group>"; };
@@ -101,6 +104,8 @@
 		F8DE6C0016E2E95D00888B85 /* Functions */ = {
 			isa = PBXGroup;
 			children = (
+				F8B1D38416F68EAB00B05991 /* Func2.cpp */,
+				F8B1D38516F68EAB00B05991 /* Func2.h */,
 				F8DE6C0116E2EA5D00888B85 /* Func1.cpp */,
 				F8DE6C0216E2EA5D00888B85 /* Func1.h */,
 			);
@@ -158,12 +163,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8B1D36E16F66AB800B05991 /* Dichotomy.cpp in Sources */,
 				F8DE6BDD16E2D6F400888B85 /* main.cpp in Sources */,
 				F8DE6BFB16E2E90F00888B85 /* IFunction.cpp in Sources */,
 				F8DE6BFC16E2E90F00888B85 /* IOptimizer.cpp in Sources */,
 				F8DE6BFD16E2E90F00888B85 /* Point.cpp in Sources */,
 				F8DE6BFE16E2E90F00888B85 /* PointHelper.cpp in Sources */,
 				F8DE6C0316E2EA5D00888B85 /* Func1.cpp in Sources */,
+				F8B1D38616F68EAB00B05991 /* Func2.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
