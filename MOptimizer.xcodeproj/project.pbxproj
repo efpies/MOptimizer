@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F8B1D36E16F66AB800B05991 /* Dichotomy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F81859E116F65BEE003025B4 /* Dichotomy.cpp */; };
 		F8B1D38616F68EAB00B05991 /* Func2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F8B1D38416F68EAB00B05991 /* Func2.cpp */; };
 		F8DE6BDD16E2D6F400888B85 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F8DE6BDC16E2D6F400888B85 /* main.cpp */; };
 		F8DE6BDF16E2D6F400888B85 /* MOptimizer.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = F8DE6BDE16E2D6F400888B85 /* MOptimizer.1 */; };
@@ -31,6 +32,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F81859E116F65BEE003025B4 /* Dichotomy.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Dichotomy.cpp; sourceTree = "<group>"; };
+		F81859E216F65BEE003025B4 /* Dichotomy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dichotomy.h; sourceTree = "<group>"; };
 		F8B1D38416F68EAB00B05991 /* Func2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Func2.cpp; sourceTree = "<group>"; };
 		F8B1D38516F68EAB00B05991 /* Func2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Func2.h; sourceTree = "<group>"; };
 		F8DE6BD916E2D6F400888B85 /* MOptimizer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MOptimizer; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -59,6 +62,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F81859E016F65BEE003025B4 /* Optimizers */ = {
+			isa = PBXGroup;
+			children = (
+				F81859E116F65BEE003025B4 /* Dichotomy.cpp */,
+				F81859E216F65BEE003025B4 /* Dichotomy.h */,
+			);
+			path = Optimizers;
+			sourceTree = "<group>";
+		};
 		F8DE6BD016E2D6F400888B85 = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				F8DE6C0016E2E95D00888B85 /* Functions */,
+				F81859E016F65BEE003025B4 /* Optimizers */,
 				F8DE6BF316E2E90F00888B85 /* IFunction.cpp */,
 				F8DE6BF416E2E90F00888B85 /* IFunction.h */,
 				F8DE6BF516E2E90F00888B85 /* IOptimizer.cpp */,
