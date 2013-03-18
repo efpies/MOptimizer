@@ -17,14 +17,55 @@ private:
     vector<double> coords;
     
 public:
+    class DimensionException {
+    public:
+        DimensionException() { }
+    };
+    
     Point(const Point &srcPoint);
     Point(const vector<double> &coords);
     
-          double& operator[](unsigned int i);
+    void print(const double precision = 0) const;
+    short dimensions() const;
+    bool isZero() const;
+    Point withAlpha(const Point &direction, const double alpha) const;
+    
+    friend double norm(const Point &first, const Point &second);
+    
+    double& operator[](unsigned int i);
 	const double& operator[](unsigned int i) const;
     
-    void print() const;
-    short dimensions() const;
+#pragma mark - Artithmetic operations
+#pragma mark - Point and double
+    
+    friend Point operator/(const Point &originalPoint, const double divider);
+    friend Point operator*(const Point &originalPoint, const double multiplier);
+    friend Point operator*(const double multiplier, const Point &originalPoint);
+    friend Point operator+(const Point &originalPoint, const double composed);
+    friend Point operator+(const double composed, const Point &originalPoint);
+    friend Point operator-(const Point &originalPoint, const double subtracted);
+    
+    friend Point operator*=(const Point &originalPoint, const double multiplier);
+    friend Point operator+=(const Point &originalPoint, const double composed);
+    
+    friend Point operator-(const Point &originalPoint);
+    
+#pragma mark - Point and point
+    
+    friend Point operator/(const Point &originalPoint, const Point &dividerPoint);
+    friend Point operator*(const Point &originalPoint, const Point &multiplierPoint);
+    friend Point operator+(const Point &originalPoint, const Point &composedPoint);
+    friend Point operator-(const Point &originalPoint, const Point &subtractedPoint);
+    
+    friend Point operator*=(const Point &originalPoint, const Point &multiplierPoint);
+    friend Point operator+=(const Point &originalPoint, const Point &composedPoint);
+    
+    friend bool operator==(const Point &first, const Point &second);
+    friend bool operator!=(const Point &first, const Point &second);
+    
+#pragma mark - cmath
+    
+    friend Point fabs(const Point &originalPoint);
 };
 
 #endif /* defined(__MOptimizer__Point__) */
