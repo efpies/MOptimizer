@@ -9,8 +9,7 @@
 #ifndef __MOptimizer__IOptimizer__
 #define __MOptimizer__IOptimizer__
 
-#define LEFT_BORDER 0
-#define RIGHT_BORDER 1
+#define MAX_ITER 25
 
 class Point;
 class IFunction;

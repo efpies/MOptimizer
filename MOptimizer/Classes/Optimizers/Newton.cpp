@@ -16,11 +16,14 @@ Point Newton::optimize(const IFunction &function, const Point &startPoint, const
 {
     Point nextPoint = startPoint;
     Point actualDirection = direction;
+    unsigned iter = 0;
     
     do {
         actualDirection = - (hessian(function, nextPoint, direction).inversed() * gradient(function, nextPoint, direction));
         nextPoint = nextPoint + actualDirection;
-    } while (actualDirection.norm() > eps);
+        ++iter;
+    } while (actualDirection.norm() > eps && iter < MAX_ITER);
     
+    cout << endl << iter << " iteration(s)" << endl;
     return nextPoint;
 }
