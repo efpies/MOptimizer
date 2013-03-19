@@ -32,6 +32,7 @@ public:
     Point withAlpha(const Point &direction, const double alpha) const;
     
     friend double norm(const Point &first, const Point &second);
+           double norm() const;
     
     double& operator[](const unsigned short i);
 	const double& operator[](const unsigned short i) const;

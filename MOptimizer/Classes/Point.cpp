@@ -97,15 +97,18 @@ Point Point::withAlpha(const Point &direction, const double alpha) const
     return newPoint;
 }
 
-double norm(const Point &first, const Point &second)
+double Point::norm() const
 {
-    Point diff = second - first;
     double norm = 0;
-    for (cPointItr i = diff.coords.begin(); i != diff.coords.end(); ++i) {
+    for (cPointItr i = coords.begin(); i != coords.end(); ++i) {
         norm += SQ(*i);
     }
-    
-    return sqrt(norm);
+    return norm;
+}
+
+double norm(const Point &first, const Point &second)
+{
+    return (second - first).norm();
 }
 
 #pragma mark - Арифметические операции
