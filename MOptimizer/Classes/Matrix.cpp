@@ -102,6 +102,9 @@ double Matrix::determinant() const
     if (rows() == 2 && cols() == 2) {
         return (*this)[0][0] * (*this)[1][1] - (*this)[1][0] * (*this)[0][1];
     }
+    else if (rows() == cols() == 1) {
+        return (*this)[0][0];
+    }
     else {
         vector<double> firstRow = (*this)[0];
         bool isPositive = true;

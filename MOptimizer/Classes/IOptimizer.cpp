@@ -11,8 +11,7 @@
 #include "IFunction.h"
 #include "Matrix.h"
 #include <iostream>
-
-#define STEP 0.001
+#define STEP 0.0001
 
 double IOptimizer::derivative1(const IFunction &f, const Point &x, short dimension, const Point &direction) const
 {
@@ -20,7 +19,6 @@ double IOptimizer::derivative1(const IFunction &f, const Point &x, short dimensi
     for (int iDimension = 0; iDimension < direction.dimensions(); ++iDimension) {
         actualDirection[iDimension] *= (iDimension == dimension) ? 1 : 0;
     }
-    
     return (f.value(x.withAlpha(actualDirection, STEP)) - f.value(x.withAlpha(actualDirection, -STEP))) / (2.0 * STEP);
 }
 
@@ -53,31 +51,4 @@ Point IOptimizer::gradient(const IFunction &f, const Point &x, const Point &dire
         gradient[dim] = derivative1(f, x, dim, direction);
     }
     return gradient;
-}
-
-void IOptimizer::swann(const IFunction &f, const Point &start, const Point &direction, double borders[2]) const
-{
-//    hessian(f, start, direction).print();
-    gradient(f, start, direction).print();
-    
-    // Определим шаг
-    double step = STEP;
-    double alpha;
-	step = (f.value(start + step) > f.value(start)) ? -step : step;
-	alpha = step;
-    
-	while(f.value(start.withAlpha(direction, alpha + 2 * step)) < f.value(start.withAlpha(direction, alpha))) {
-		step *= 2;
-		alpha += step;
-	}
-    
-	// Начальные границы локализации минимума
-	borders[LEFT_BORDER] = min(alpha + 2 * step, alpha - step);
-	borders[RIGHT_BORDER] = max(alpha + 2 * step, alpha - step);
-    
-    cout << endl << "Localization area:\t";
-    start.withAlpha(direction, borders[LEFT_BORDER]).print();
-    cout << " ; ";
-    start.withAlpha(direction, borders[RIGHT_BORDER]).print();
-    cout << endl;
 }

@@ -9,6 +9,13 @@
 #ifndef __MOptimizer__Func24__
 #define __MOptimizer__Func24__
 
-#include <iostream>
+#include "IFunction.h"
+
+class Func24 : public IFunction {
+public:
+    double value(const Point &point) const;
+    short dimensions() const;
+    string stringRepresentation() const;
+};
 
 #endif /* defined(__MOptimizer__Func24__) */

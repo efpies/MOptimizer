@@ -7,11 +7,10 @@
 //
 
 #include <iostream>
-#include "Point.h"
 #include "PointHelper.h"
-#include "Func1.h"
-#include "Func2.h"
-#include "Dichotomy.h"
+#include "Func19.h"
+#include "Func24.h"
+#include "Newton.h"
 
 Point inputPoint(const IFunction &f)
 {
@@ -34,6 +33,34 @@ Point inputDirection(const IFunction &f, bool assume1 = false)
     }
 }
 
+IFunction *selectFunction()
+{
+    short decision;
+    
+    cout << "Select function:" << endl;
+    
+    Func19 *f19 = new Func19;
+    cout << "\t(19)\t" << f19->stringRepresentation() << endl;
+    Func24 *f24 = new Func24;
+    cout << "\t(24)\t" << f24->stringRepresentation() << endl;
+
+    do {
+        cin >> decision;
+        
+        switch (decision) {
+            case 19:
+                return f19;
+                
+            case 24:
+                return f24;
+                
+            default:
+                cout << "Select one from above" << endl;
+                break;
+        }
+    } while (true);
+}
+
 double inputPrecision()
 {
     double precision;
@@ -44,21 +71,20 @@ double inputPrecision()
 
 int main(int argc, const char * argv[])
 {
-    Func2 f = Func2();
-    cout << f.stringRepresentation() << endl << endl;
+    IFunction *f = selectFunction();
     
-    Point p = inputPoint(f);
-    Point d = inputDirection(f);
+    Point p = inputPoint(*f);
+    Point d = inputDirection(*f, true);
     
-    double precision= inputPrecision();
+    double precision = inputPrecision();
     
-    Dichotomy opt = Dichotomy();
-    Point min = opt.optimize(f, p, d, precision);
+    Newton opt = Newton();
+    Point min = opt.optimize(*f, p, d, precision);
     
     cout << "Minimum is:\t";
     min.print(precision);
     cout << endl << "F(min) is:\t";
-    cout << f.value(min);
+    cout << (*f).value(min);
     
     return 0;
 }

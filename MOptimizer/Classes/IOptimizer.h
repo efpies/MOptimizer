@@ -22,7 +22,6 @@ protected:
     Matrix hessian(const IFunction &function, const Point &where, const Point &direction) const;
     Point gradient(const IFunction &f, const Point &where, const Point &direction) const;
     double derivative1(const IFunction &function, const Point &where, short dimension, const Point &direction) const;
-    void swann(const IFunction &function, const Point &startPoint, const Point &direction, double borders[2]) const;
     
 public:
     virtual Point optimize(const IFunction &function, const Point &startPoint, const Point &direction, const double eps) const = 0;

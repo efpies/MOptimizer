@@ -9,6 +9,12 @@
 #ifndef __MOptimizer__Newton__
 #define __MOptimizer__Newton__
 
-#include <iostream>
+#include "IOptimizer.h"
+
+class Newton : public virtual IOptimizer {
+    
+public:
+    virtual Point optimize(const IFunction &function, const Point &startPoint, const Point &direction, const double eps) const;
+};
 
 #endif /* defined(__MOptimizer__Newton__) */
