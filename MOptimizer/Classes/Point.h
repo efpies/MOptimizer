@@ -24,6 +24,7 @@ public:
     
     Point(const Point &srcPoint);
     Point(const vector<double> &coords);
+    Point(const unsigned short dimensions);
     
     void print(const double precision = 0) const;
     short dimensions() const;
@@ -32,8 +33,8 @@ public:
     
     friend double norm(const Point &first, const Point &second);
     
-    double& operator[](unsigned int i);
-	const double& operator[](unsigned int i) const;
+    double& operator[](const unsigned short i);
+	const double& operator[](const unsigned short i) const;
     
 #pragma mark - Арифметические операции
 #pragma mark - Point и double

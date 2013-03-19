@@ -11,6 +11,9 @@
 
 class Point;
 
+#define SQ(x) ((x) * (x))
+#define QB(x) ((x) * (x) * (x))
+
 #include <string>
 using namespace std;
 

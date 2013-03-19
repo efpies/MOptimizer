@@ -9,9 +9,7 @@
 #include "Func2.h"
 
 #include "Point.h"
-
-#define SQ(x) (x) * (x)
-#define QB(x) (x) * (x)
+#include <cmath>
 
 double Func2::value(const Point &point) const
 {

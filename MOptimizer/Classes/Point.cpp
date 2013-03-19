@@ -29,6 +29,14 @@ Point::Point(const vector<double> &_coords)
     
 }
 
+Point::Point(const unsigned short dimensions)
+    : coords(vector<double>(dimensions))
+{
+    for (pointItr dim = coords.begin(); dim != coords.end(); ++dim) {
+        (*dim) = 0;
+    }
+}
+
 void Point::print(const double precision) const
 {
     short savePrecision = cout.precision();
@@ -48,12 +56,12 @@ void Point::print(const double precision) const
     cout.precision(savePrecision);
 }
 
-double& Point::operator[](unsigned int i)
+double& Point::operator[](const unsigned short i)
 {
     return coords[i];
 }
 
-const double& Point::operator[](unsigned int i) const
+const double& Point::operator[](const unsigned short i) const
 {
     return coords[i];
 }
