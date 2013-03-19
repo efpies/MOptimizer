@@ -20,6 +20,8 @@ class IOptimizer {
 protected:
     Matrix hessian(const IFunction &function, const Point &where, const Point &direction) const;
     Point gradient(const IFunction &f, const Point &where, const Point &direction) const;
+    
+    // Первая производная
     double derivative1(const IFunction &function, const Point &where, short dimension, const Point &direction) const;
     
 public:

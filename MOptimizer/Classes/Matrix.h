@@ -16,9 +16,9 @@ class Point;
 
 class Matrix {
     vector<vector<double>> coords;
-    Matrix cofactors() const;
-    double minor(short row, short col) const;
-    Matrix sliceExcluding(short row, short col) const;
+    Matrix cofactors() const;   // Алгебраическое дополнение
+    Matrix sliceExcluding(short row, short col) const;  // Матрица без строки row и столбца col
+    double minor(short row, short col) const;   // Минор матрицы sliceExcluding
     
 public:
     Matrix(short rows, short cols);

@@ -19,7 +19,10 @@ Point Newton::optimize(const IFunction &function, const Point &startPoint, const
     unsigned iter = 0;
     
     do {
-        actualDirection = - (hessian(function, nextPoint, direction).inversed() * gradient(function, nextPoint, direction));
+        // Ньютоновское направление
+        actualDirection = -(hessian(function, nextPoint, direction).inversed() * gradient(function, nextPoint, direction));
+        
+        // Следующая точка
         nextPoint = nextPoint + actualDirection;
         ++iter;
     } while (actualDirection.norm() > eps && iter < MAX_ITER);

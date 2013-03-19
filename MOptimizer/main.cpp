@@ -71,20 +71,19 @@ double inputPrecision()
 
 int main(int argc, const char * argv[])
 {
-    IFunction *f = selectFunction();
+    IFunction *targetFunction = selectFunction();   // Выбор целевой функции
     
-    Point p = inputPoint(*f);
-    Point d = inputDirection(*f, true);
+    Point startPoint = inputPoint(*targetFunction);   // Ввод стартовой точки
+    Point direction = inputDirection(*targetFunction, true); // Направление принимаем за единичный вектор
     
-    double precision = inputPrecision();
+    double precision = inputPrecision();    // Ввод точности
     
-    Newton opt = Newton();
-    Point min = opt.optimize(*f, p, d, precision);
+    Point min = Newton().optimize(*targetFunction, startPoint, direction, precision);
     
     cout << "Minimum is:\t";
     min.print(precision);
     cout << endl << "F(min) is:\t";
-    cout << (*f).value(min);
+    cout << targetFunction->value(min);
     
     return 0;
 }

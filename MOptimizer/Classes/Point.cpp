@@ -71,17 +71,6 @@ short Point::dimensions() const
     return coords.size();
 }
 
-bool Point::isZero() const
-{
-    for (cPointItr i = coords.begin(); i != coords.end(); ++i) {
-        if ((*i) == 0) {
-            return true;
-        }
-    }
-    
-    return false;
-}
-
 Point Point::withAlpha(const Point &direction, const double alpha) const
 {
     if (dimensions() != direction.dimensions()) {
@@ -168,16 +157,6 @@ Point operator-(const Point &originalPoint, const double subtracted)
     return Point(originalCoords);
 }
 
-Point operator*=(const Point &originalPoint, const double multiplier)
-{
-    return operator*(originalPoint, multiplier);
-}
-
-Point operator+=(const Point &originalPoint, const double composed)
-{
-    return operator+(originalPoint, composed);
-}
-
 Point operator-(const Point &originalPoint)
 {
     vector<double> originalCoords = originalPoint.coords;
@@ -249,16 +228,6 @@ Point operator-(const Point &originalPoint, const Point &subtractedPoint)
     }
     
     return newPoint;
-}
-
-Point operator*=(const Point &originalPoint, const Point &multiplierPoint)
-{
-    return operator*(originalPoint, multiplierPoint);
-}
-
-Point operator+=(const Point &originalPoint, const Point &composedPoint)
-{
-    return operator+(originalPoint, composedPoint);
 }
 
 bool operator==(const Point &first, const Point &second)

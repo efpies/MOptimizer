@@ -10,7 +10,6 @@
 #include "Point.h"
 #include "IFunction.h"
 #include "Matrix.h"
-#include <iostream>
 #define STEP 0.0001
 
 double IOptimizer::derivative1(const IFunction &f, const Point &x, short dimension, const Point &direction) const
@@ -28,6 +27,7 @@ Matrix IOptimizer::hessian(const IFunction &f, const Point &x, const Point &dire
     Matrix hessian = Matrix(f.dimensions(), f.dimensions());
     for (short row = 0; row < hessian.rows(); ++row) {
         for (short col = 0; col < hessian.cols(); ++col) {
+            // Выбор орт
             Point rowColDirection = Point(f.dimensions());
             rowColDirection[row] += direction[row];
             rowColDirection[col] += direction[col];

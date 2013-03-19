@@ -28,7 +28,8 @@ public:
     
     void print(const double precision = 0) const;
     short dimensions() const;
-    bool isZero() const;
+    
+    // Точка по направлению direction на расстоянии alpha
     Point withAlpha(const Point &direction, const double alpha) const;
     
     friend double norm(const Point &first, const Point &second);
@@ -47,9 +48,6 @@ public:
     friend Point operator+(const double composed, const Point &originalPoint);
     friend Point operator-(const Point &originalPoint, const double subtracted);
     
-    friend Point operator*=(const Point &originalPoint, const double multiplier);
-    friend Point operator+=(const Point &originalPoint, const double composed);
-    
     friend Point operator-(const Point &originalPoint);
     
 #pragma mark - Point и point
@@ -58,9 +56,6 @@ public:
     friend Point operator*(const Point &originalPoint, const Point &multiplierPoint);
     friend Point operator+(const Point &originalPoint, const Point &composedPoint);
     friend Point operator-(const Point &originalPoint, const Point &subtractedPoint);
-    
-    friend Point operator*=(const Point &originalPoint, const Point &multiplierPoint);
-    friend Point operator+=(const Point &originalPoint, const Point &composedPoint);
     
     friend bool operator==(const Point &first, const Point &second);
     friend bool operator!=(const Point &first, const Point &second);
