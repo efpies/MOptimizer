@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F83206F31701A26800154D12 /* Func20.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F83206F11701A26800154D12 /* Func20.cpp */; };
 		F8B1D38916F7C91C00B05991 /* Matrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F8B1D38716F7C91B00B05991 /* Matrix.cpp */; };
 		F8B1D38C16F8010A00B05991 /* Func24.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F8B1D38A16F8010A00B05991 /* Func24.cpp */; };
 		F8B1D38F16F80EDC00B05991 /* Newton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F8B1D38D16F80EDC00B05991 /* Newton.cpp */; };
@@ -33,6 +34,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F83206F11701A26800154D12 /* Func20.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Func20.cpp; sourceTree = "<group>"; };
+		F83206F21701A26800154D12 /* Func20.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Func20.h; sourceTree = "<group>"; };
 		F8B1D38716F7C91B00B05991 /* Matrix.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Matrix.cpp; sourceTree = "<group>"; };
 		F8B1D38816F7C91B00B05991 /* Matrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Matrix.h; sourceTree = "<group>"; };
 		F8B1D38A16F8010A00B05991 /* Func24.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Func24.cpp; sourceTree = "<group>"; };
@@ -126,6 +129,8 @@
 				F8B1D39316F82A3500B05991 /* Func19.h */,
 				F8B1D38A16F8010A00B05991 /* Func24.cpp */,
 				F8B1D38B16F8010A00B05991 /* Func24.h */,
+				F83206F11701A26800154D12 /* Func20.cpp */,
+				F83206F21701A26800154D12 /* Func20.h */,
 			);
 			path = Functions;
 			sourceTree = "<group>";
@@ -190,6 +195,7 @@
 				F8B1D38C16F8010A00B05991 /* Func24.cpp in Sources */,
 				F8B1D38F16F80EDC00B05991 /* Newton.cpp in Sources */,
 				F8B1D39416F82A3500B05991 /* Func19.cpp in Sources */,
+				F83206F31701A26800154D12 /* Func20.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

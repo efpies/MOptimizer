@@ -10,6 +10,7 @@
 #include "PointHelper.h"
 #include "Func19.h"
 #include "Func24.h"
+#include "Func20.h"
 #include "Newton.h"
 
 Point inputPoint(const IFunction &f)
@@ -41,6 +42,8 @@ IFunction *selectFunction()
     
     Func19 *f19 = new Func19;
     cout << "\t(19)\t" << f19->stringRepresentation() << endl;
+    Func20 *f20 = new Func20;
+    cout << "\t(20)\t" << f20->stringRepresentation() << endl;
     Func24 *f24 = new Func24;
     cout << "\t(24)\t" << f24->stringRepresentation() << endl;
 
@@ -50,6 +53,9 @@ IFunction *selectFunction()
         switch (decision) {
             case 19:
                 return f19;
+                
+            case 20:
+                return f20;
                 
             case 24:
                 return f24;
