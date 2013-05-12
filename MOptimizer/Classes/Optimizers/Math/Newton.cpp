@@ -22,8 +22,18 @@ Point Newton::optimize(const IFunction &function, const Point &startPoint, const
         // Ньютоновское направление
         actualDirection = -(hessian(function, nextPoint, direction).inversed() * gradient(function, nextPoint, direction));
         
+        cout << endl << "grad ";
+        gradient(function, nextPoint, direction).print();
+        cout << endl << "hess" <<endl;
+        hessian(function, nextPoint, direction).inversed().print();
+        cout << endl << endl;
+        
         // Следующая точка
         nextPoint = nextPoint + actualDirection;
+        actualDirection.print();
+        cout << " | ";
+        nextPoint.print();
+        cout << " " << iter << endl;
         ++iter;
     } while (actualDirection.norm() > eps && iter < MAX_ITER);
     

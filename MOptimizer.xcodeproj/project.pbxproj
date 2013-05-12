@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		F83206F31701A26800154D12 /* Func20.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F83206F11701A26800154D12 /* Func20.cpp */; };
+		F83AB1F9173F39C700D893DC /* Newton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F83AB1F7173F39C700D893DC /* Newton.cpp */; };
 		F8B1D38916F7C91C00B05991 /* Matrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F8B1D38716F7C91B00B05991 /* Matrix.cpp */; };
 		F8B1D38C16F8010A00B05991 /* Func24.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F8B1D38A16F8010A00B05991 /* Func24.cpp */; };
-		F8B1D38F16F80EDC00B05991 /* Newton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F8B1D38D16F80EDC00B05991 /* Newton.cpp */; };
 		F8B1D39416F82A3500B05991 /* Func19.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F8B1D39216F82A3500B05991 /* Func19.cpp */; };
 		F8DE6BDD16E2D6F400888B85 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F8DE6BDC16E2D6F400888B85 /* main.cpp */; };
 		F8DE6BDF16E2D6F400888B85 /* MOptimizer.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = F8DE6BDE16E2D6F400888B85 /* MOptimizer.1 */; };
@@ -36,12 +36,12 @@
 /* Begin PBXFileReference section */
 		F83206F11701A26800154D12 /* Func20.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Func20.cpp; sourceTree = "<group>"; };
 		F83206F21701A26800154D12 /* Func20.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Func20.h; sourceTree = "<group>"; };
+		F83AB1F7173F39C700D893DC /* Newton.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Newton.cpp; sourceTree = "<group>"; };
+		F83AB1F8173F39C700D893DC /* Newton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Newton.h; sourceTree = "<group>"; };
 		F8B1D38716F7C91B00B05991 /* Matrix.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Matrix.cpp; sourceTree = "<group>"; };
 		F8B1D38816F7C91B00B05991 /* Matrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Matrix.h; sourceTree = "<group>"; };
 		F8B1D38A16F8010A00B05991 /* Func24.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Func24.cpp; sourceTree = "<group>"; };
 		F8B1D38B16F8010A00B05991 /* Func24.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Func24.h; sourceTree = "<group>"; };
-		F8B1D38D16F80EDC00B05991 /* Newton.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Newton.cpp; sourceTree = "<group>"; };
-		F8B1D38E16F80EDC00B05991 /* Newton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Newton.h; sourceTree = "<group>"; };
 		F8B1D39216F82A3500B05991 /* Func19.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Func19.cpp; sourceTree = "<group>"; };
 		F8B1D39316F82A3500B05991 /* Func19.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Func19.h; sourceTree = "<group>"; };
 		F8DE6BD916E2D6F400888B85 /* MOptimizer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MOptimizer; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,10 +71,26 @@
 		F81859E016F65BEE003025B4 /* Optimizers */ = {
 			isa = PBXGroup;
 			children = (
-				F8B1D38D16F80EDC00B05991 /* Newton.cpp */,
-				F8B1D38E16F80EDC00B05991 /* Newton.h */,
+				F83AB1F5173F39C700D893DC /* Genetic */,
+				F83AB1F6173F39C700D893DC /* Math */,
 			);
 			path = Optimizers;
+			sourceTree = "<group>";
+		};
+		F83AB1F5173F39C700D893DC /* Genetic */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Genetic;
+			sourceTree = "<group>";
+		};
+		F83AB1F6173F39C700D893DC /* Math */ = {
+			isa = PBXGroup;
+			children = (
+				F83AB1F7173F39C700D893DC /* Newton.cpp */,
+				F83AB1F8173F39C700D893DC /* Newton.h */,
+			);
+			path = Math;
 			sourceTree = "<group>";
 		};
 		F8DE6BD016E2D6F400888B85 = {
@@ -193,9 +209,9 @@
 				F8DE6BFE16E2E90F00888B85 /* PointHelper.cpp in Sources */,
 				F8B1D38916F7C91C00B05991 /* Matrix.cpp in Sources */,
 				F8B1D38C16F8010A00B05991 /* Func24.cpp in Sources */,
-				F8B1D38F16F80EDC00B05991 /* Newton.cpp in Sources */,
 				F8B1D39416F82A3500B05991 /* Func19.cpp in Sources */,
 				F83206F31701A26800154D12 /* Func20.cpp in Sources */,
+				F83AB1F9173F39C700D893DC /* Newton.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
